@@ -1,0 +1,15 @@
+#   Выбор из 5ти рамдомных слов
+
+import random
+def rand_word(list_words):
+    current_word = random.choice(list_words)
+    return  current_word
+mylist =[]
+for _ in range(5):
+    mylist.append(input())
+
+while True:
+    _tap = input()
+    if _tap.lower() == 'w':
+        myword = rand_word(mylist)
+        print(myword)
