@@ -1,0 +1,25 @@
+def myfanc (a,b):
+    return a+b
+
+    print (myfanc(6,3))
+    print (myfanc(b=8, a=10))
+    print ()
+
+    def myF(a, b):
+        return a + b
+
+    print(myF(2, 4))
+    print(myF(b=8, a=10))
+    print()
+
+    def myF2(num, *arge):
+        print('аргумент', arge)
+        print('кортеж переменных аргументов ', arge)
+
+    myF2(1, 1)
+    myF2(1)
+    myF2('a', 'b')
+    myT = ('ap', 'ba')
+    myF2(myT)
+    myF2(*myT)
+
